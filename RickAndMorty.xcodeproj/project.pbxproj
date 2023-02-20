@@ -140,10 +140,10 @@
 		7B75766929A3A23B00AA4E35 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7B75767029A3A27E00AA4E35 /* RMTabViewController.swift */,
 				7B75766A29A3A25600AA4E35 /* RMCharacterViewController.swift */,
 				7B75766C29A3A26200AA4E35 /* RMEpisodeViewController.swift */,
 				7B75766E29A3A26F00AA4E35 /* RMLocationViewController.swift */,
-				7B75767029A3A27E00AA4E35 /* RMTabViewController.swift */,
 				7B75767229A3A2B600AA4E35 /* RMSettingsViewController.swift */,
 			);
 			path = Core;
