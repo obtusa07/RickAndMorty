@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CharacterListViewViewModel: NSObject {
+final class RMCharacterListViewViewModel: NSObject {
     func fetchCharacters() {
         RMService.shared.execute(.listCharactersRequests, expecting: RMGetAllCharacterResponse.self) { result in
             switch result {
@@ -23,7 +23,7 @@ final class CharacterListViewViewModel: NSObject {
 }
 
 
-extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }

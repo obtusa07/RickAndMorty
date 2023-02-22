@@ -8,8 +8,8 @@
 import UIKit
 
 /// View that handles showing list of characters, loader, etc.
-final class CharacterListView: UIView {
-    private let viewModel = CharacterListViewViewModel()
+final class RMCharacterListView: UIView {
+    private let viewModel = RMCharacterListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
