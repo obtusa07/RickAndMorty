@@ -25,7 +25,7 @@ final class RMCharacterCollectionViewCellViewModel {
     }
     // text만 노출시키고 싶기 떄문에 computed property 사용
     public var characterStatusText: String {
-        return characterStatus.rawValue
+        return "Status: \(characterStatus.text)"
     }
     
     public func fetchImage(completion: @escaping (Result <Data, Error>) -> Void) {
