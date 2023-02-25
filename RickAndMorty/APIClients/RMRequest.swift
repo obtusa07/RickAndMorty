@@ -62,7 +62,7 @@ final class RMRequest {
     
     
     /// Desired http method
-    public let httpMethod =   "GET"
+    public let httpMethod = "GET"
     
     
     /// Contruct request

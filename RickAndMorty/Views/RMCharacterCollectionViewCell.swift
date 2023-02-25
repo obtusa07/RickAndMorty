@@ -61,9 +61,6 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
             imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
             imageView.bottomAnchor.constraint(equalTo: nameLabel.topAnchor)
         ])
-        imageView.backgroundColor = .systemMint
-        nameLabel.backgroundColor = .red
-        statusLabel.backgroundColor = .green
     }
     
     override func prepareForReuse() {
