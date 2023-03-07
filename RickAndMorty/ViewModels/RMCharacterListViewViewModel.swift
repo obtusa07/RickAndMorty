@@ -87,7 +87,7 @@ final class RMCharacterListViewViewModel: NSObject {
                 DispatchQueue.main.async {
                     strongSelf.delegate?.didLoadMoreCharacters(
                         with: indexPathsAdd)
-                    // strongSelf.isLoadingMoreCharacters = false
+                     strongSelf.isLoadingMoreCharacters = false
                 }
             case .failure(let failed):
                 print(String(describing: failed))

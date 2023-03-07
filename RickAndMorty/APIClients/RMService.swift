@@ -56,7 +56,7 @@ final class RMService {
     
     private func request(from rmRequest: RMRequest) -> URLRequest? {
         guard let url = rmRequest.url else { return nil }
-        print(url)
+//        print(url)
         var request = URLRequest(url: url)
         request.httpMethod = rmRequest.httpMethod
         
