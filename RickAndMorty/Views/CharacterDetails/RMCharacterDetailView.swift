@@ -23,7 +23,7 @@ final class RMCharacterDetailView: UIView {
         self.viewModel = viewModel
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .systemGreen
+//        backgroundColor = .systemGreen
         let collectionView = createCollectionView()
         self.collectionView = collectionView
         addSubviews(collectionView, spinner)

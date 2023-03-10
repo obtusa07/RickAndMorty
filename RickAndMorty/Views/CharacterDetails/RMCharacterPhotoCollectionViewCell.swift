@@ -33,7 +33,6 @@ final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
             imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
             imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
-        
     }
     
     override func prepareForReuse() {
