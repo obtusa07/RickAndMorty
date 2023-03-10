@@ -11,6 +11,8 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "RMCharacterInfoCollectionViewCell"
     override init(frame: CGRect) {
         super.init(frame: frame)
+        contentView.backgroundColor = .blue
+        contentView.layer.cornerRadius = 8
     }
     required init?(coder: NSCoder) {
         fatalError()

@@ -12,7 +12,9 @@ final class RMImageLoader {
     private var imageDataCache = NSCache<NSString, NSData>()
     
     static let shared = RMImageLoader()
-    private init() {}
+    private init() {
+        
+    }
     
     public func downloadImage(_ url: URL, completion: @escaping (Result <Data, Error>) -> Void) {
         let key = url.absoluteString as NSString
@@ -26,7 +28,6 @@ final class RMImageLoader {
                 completion(.failure(error ?? URLError(.badServerResponse)))
                 return
             }
-            let key = url.absoluteString as NSString
             let value = data as NSData
             self?.imageDataCache.setObject(value, forKey: key)
             completion(.success(data))
