@@ -103,7 +103,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let sectionType =   viewModel.sections[indexPath.section]
+        let sectionType = viewModel.sections[indexPath.section]
         switch sectionType {
         case .photo, .information:
             break
